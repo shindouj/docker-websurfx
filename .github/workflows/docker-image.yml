@@ -34,7 +34,7 @@ jobs:
     - name: Checkout repo
       if: steps.cache.outputs.cache-hit != 'true' || inputs.force
       shell: bash
-      run: git clone --branch main --single-branch https://github.com/neon-mmd/websurfx.git .    
+      run: git clone --branch rolling --single-branch https://github.com/neon-mmd/websurfx.git .    
     
     - name: Checkout
       if: steps.cache.outputs.cache-hit != 'true' || inputs.force
